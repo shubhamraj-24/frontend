@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color:rgba(37, 141, 141, 0.685);
+            /* background-color:rgba(60, 50, 168,0.6) */
+
+        }
+        input{
+            
+            border-radius:7px
+        }
+        legend{
+            font-weight: bold;
+        }
+        #submit{
+            background-color:rgba(42, 148, 209, 0.685)
+        }
+    </style>
+</head>
+
+<body>
+    <form autocomplete="on" method="post" enctype="multipart/form-data">
+        <h2 align="center">Application Form</h2>
+        <hr>
+        <fieldset>
+            <legend>User Details</legend>
+            <label for="name">Name:</label><br>
+            <input type="text" class="input" id="name" name="name"><br>
+
+            <label for="fname">Father's Name:</label><br>
+            <input type="text" class="input" id="fname" name="fname"><br>
+
+            <label for="mname">Mother's Name:</label><br>
+            <input type="text" class="input" id="mname" name="mname"><br>
+
+            <label for="contact">Contact Number:</label><br>
+            <input type="tel" class="input" id="contact" name="contact"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" class="input" id="email" name="email"><br><br>
+
+            <label for="birthday">DOB:</label>
+            <input type="date" class="input" id="birthday" name="birthday"><br>
+
+            <p style="margin:3px">Gender:</p>
+            <input type="radio" id="male" name="gender" value="MALE">
+            <label for="male">MALE</label><br>
+
+            <input type="radio" id="female" name="gender" value="FEMALE">
+            <label for="female">FEMALE</label><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Address Details</legend>
+            <p>Present Address:</p>
+            <input type="text" class="input" id="At" name="At" placeholder="At">
+            <input type="text" class="input" id="PO" name="PO" placeholder="PO">
+            <input type="text" class="input" id="District" name="District" placeholder="District">
+
+            <input type="text" class="input" id="State" name="State" placeholder="State">
+            <input type="text" class="input" id="PIN" name="PIN" placeholder="PIN">
+            <input type="tel" class="input" id="Ph_no." name="Ph_no." placeholder="Ph_no.">
+
+            <p>Communication Address:</p>
+            <input type="checkbox" id="same" name="same">
+            <label for="same">Same as present address.</label><br>
+
+            <input type="text" class="input" id="At" name="At" placeholder="At">
+            <input type="text" class="input" id="PO" name="PO" placeholder="PO">
+            <input type="text" class="input" id="District" name="District" placeholder="District">
+
+            <input type="text" class="input" id="State" name="State" placeholder="State">
+            <input type="text" class="input" id="PIN" name="PIN" placeholder="PIN">
+            <input type="tel" class="input" id="Ph_no." name="Ph_no." placeholder="Ph_no.">
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Educational Details</legend>
+            <div class="education" id="education">
+                <!-- <h2 id="EdTl"><i class="fa fa-institution"></i> Educational Qualification</h2> -->
+                <table >
+                    <tr>
+                        <th>Exam</th>
+                        <th>Board/University</th>
+                        <th>Percentage/CGPA</th>
+                        <th>Division</th>
+                    </tr>
+                    <tr>
+                        <th>B.Tech</th>
+                        <td><input type="text" class="input" name="university"></td>
+                        <td><input type="number" class="input" name="prcentage"></td>
+                        <td><input type="text" class="input" name="division"></td>
+                    </tr>
+                    <tr>
+                        <th>12th</th>
+                        <td><input type="text" class="input" name="university"></td>
+                        <td><input type="number" class="input" name="prcentage"></td>
+                        <td><input type="text" class="input" name="division"></td>
+                    </tr>
+                    <tr>
+                        <th>10th</th>
+                        <td><input type="text" class="input" name="university"></td>
+                        <td><input type="number" class="input" name="prcentage"></td>
+                        <td><input type="text" class="input" name="division"></td>
+                    </tr>
+                </table>
+            </div>
+
+        </fieldset><br>
+
+        Upload image:
+        <input type="file" name="fileToUpload" id="image"><br><br>
+        Upload signature:
+        <input type="file" name="fileToUpload" id="signature"><br><br>
+
+        <input type="checkbox" id="dec" name="dec">
+        <label for="dec">I hereby declare that the above-mentioned information is accurate to the best of my knowledge
+            and belief.I solemnly declare that the information furnished above is free from errors to the best of my
+            knowledge and belief.</label><br><br>
+
+        <input type="button" id="submit" value ="Submit">
+
+
+
+
+    </form>
+
+
+</body>
+
+</html>
